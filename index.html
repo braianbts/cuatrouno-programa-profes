@@ -717,6 +717,19 @@ footer p{color:rgba(255,255,255,.3);font-size:.73rem;letter-spacing:.06em}
 @media(max-width:1024px){.dl-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.dl-sec{padding:4rem 1.25rem 5rem}.dl-grid{grid-template-columns:1fr}}
 
+
+.dl-divider{margin:3rem 0 1.5rem;display:flex;align-items:center;gap:1rem}
+.dl-divider::before,.dl-divider::after{content:'';flex:1;height:1px;background:var(--border)}
+.dl-divider-label{font-size:.68rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+.dl-combos-grid{grid-template-columns:repeat(4,1fr) !important}
+.dl-img-preview{
+  width:100%;aspect-ratio:9/16;
+  background-size:cover;background-position:center;
+  display:block;
+}
+@media(max-width:1024px){.dl-combos-grid{grid-template-columns:repeat(2,1fr) !important}}
+@media(max-width:600px){.dl-combos-grid{grid-template-columns:repeat(2,1fr) !important}}
+
 </style>
 </head>
 <body>
@@ -989,6 +1002,40 @@ footer p{color:rgba(255,255,255,.3);font-size:.73rem;letter-spacing:.06em}
             <input id="codeInput" type="text" class="dl-input" placeholder="Tu código: SEBA_C41" maxlength="20" oninput="renderCode()">
             <button class="dl-btn" onclick="dlCanvas('cv3','cuatrouno-mi-codigo')">↓ Descargar</button>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dl-divider">
+      <span class="dl-divider-label">Imágenes de Combos (1080×1920)</span>
+    </div>
+    <div class="dl-grid dl-combos-grid">
+      <div class="dl-card">
+        <div class="dl-img-preview" style="background-image:url('COMBO1.jpg')"></div>
+        <div class="dl-info">
+          <span class="dl-label">Pack Training x2 – Core Club</span>
+          <a class="dl-btn" href="COMBO1.jpg" download="cuatrouno-combo1.jpg">↓ Descargar</a>
+        </div>
+      </div>
+      <div class="dl-card">
+        <div class="dl-img-preview" style="background-image:url('COMBO2.jpg')"></div>
+        <div class="dl-info">
+          <span class="dl-label">Creatina Star + Pump V8 Star</span>
+          <a class="dl-btn" href="COMBO2.jpg" download="cuatrouno-combo2.jpg">↓ Descargar</a>
+        </div>
+      </div>
+      <div class="dl-card">
+        <div class="dl-img-preview" style="background-image:url('COMBO3.jpg')"></div>
+        <div class="dl-info">
+          <span class="dl-label">Whey Star 2lb + Creatina Star 300g</span>
+          <a class="dl-btn" href="COMBO3.jpg" download="cuatrouno-combo3.jpg">↓ Descargar</a>
+        </div>
+      </div>
+      <div class="dl-card">
+        <div class="dl-img-preview" style="background-image:url('COMBO4.jpg')"></div>
+        <div class="dl-info">
+          <span class="dl-label">Whey One Fit 2lb + Creatina One Fit</span>
+          <a class="dl-btn" href="COMBO4.jpg" download="cuatrouno-combo4.jpg">↓ Descargar</a>
         </div>
       </div>
     </div>
